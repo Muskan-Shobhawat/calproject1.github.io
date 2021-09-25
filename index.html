@@ -1,0 +1,251 @@
+<!-- The file also includes the responsive code for min-width 720px and min-width 1000px -->
+<html>
+<head>
+<title>Calculator</title>
+<style>
+
+ @font-face{font-family:InversionzItalic;src:url("InversionzItalic.ttf");}
+ .InversionzItalic
+ {
+  font-family:InversionzItalic;
+ }
+
+
+ @font-face{font-family:KlarindaPlayfulPersonal;src:url("KlarindaPlayfulPersonal.ttf");}
+ .KlarindaPlayfulPersonal
+ {
+  font-family:KlarindaPlayfulPersonal;
+ }
+
+
+ @font-face{font-family:Klara;src:url("Klara.ttf");}
+ .Klara
+ {
+  font-family:Klara;
+ }
+
+
+ @font-face{font-family:digital;src:url("digital.ttf");}
+ .digital
+ {
+  font-family:digital;
+ }
+
+
+ body
+ {
+   background:#182C61;
+ }
+
+
+  form
+ {
+  text-align:center;
+ }
+
+
+ .btn:hover
+ {
+  background:lightgrey;
+  cursor:pointer;
+ }
+
+
+ .ltn
+ {
+  cursor:pointer;
+ }
+
+
+ a:hover
+ {
+   display:box;
+   background:white;
+   color:black;
+ }
+
+
+@media only screen and (min-width:720px)
+{
+ h1
+ {
+   font-size:4em;
+   text-align:center;
+   box-sizing:border-box;
+   margin-top:0.5em;
+   margin-bottom:0.5em;
+   margin-left:0.5em;
+   margin-right:0.5em;
+   background-color:white;
+   width:14em;
+   border-style:solid;
+   border-color:black;
+   border-width:0.1em;
+ }
+
+
+  p
+  {
+    color:white;
+    font-size:2em;
+    padding:0em 1.5em 0em 1.5em;
+  }
+ 
+
+  img
+  {
+    border-radius:1em;
+    height:25em;
+  }
+
+
+   h2
+  {
+    font-size:3em;
+    text-align:center;
+    box-sizing:border-box;
+    margin-top:1em;
+    margin-bottom:1em;
+    margin-left:4em;
+    margin-right:4em;
+    background-color:white;
+    width:12em;
+    border-style:solid;
+    border-color:black;
+    border-width:0.3em;
+  }
+
+
+   input
+  { 
+    width:1.5em;
+    height:1.5m;
+    margin:0.02em;
+    font-size:3.2em;
+    padding:0.2em 0.2em;
+    position:center;
+    border-radius:0.12em;
+  }
+  
+
+   a
+  {
+   color:yellow;
+   font-size:2.5em;
+   margin-left:1.5em;
+  }
+}
+
+
+@media only screen and (min-width:1000px)
+{
+    h1
+   {
+     font-size:4em;
+     text-align:center;
+     box-sizing:border-box;
+     margin-top:0.5em;
+     margin-bottom:0.5em;
+     margin-left:0.5em;
+     margin-right:0.5em;
+     background-color:white;
+     width:28.8em;
+     border-style:solid;
+     border-color:black;
+     border-width:0.1em;
+   }
+
+
+    p
+   {
+     color:white;
+     font-size:2em;
+     padding:0em 1.5em 0em 1.5em;
+   }
+ 
+
+   img
+  {
+    border-radius:1em;
+    height:25em;
+  }
+
+
+   h2
+  {
+    font-size:3em;
+    text-align:center;
+    box-sizing:border-box;
+    margin-top:1em;
+    margin-bottom:1em;
+    margin-left:13.8em;
+    margin-right:13.8em;
+    background-color:white;
+    width:12em;
+    border-style:solid;
+    border-color:black;
+    border-width:0.3em;
+  }
+
+
+   input
+  { 
+    width:1.5em;
+    height:1.5m;
+    margin:0.02em;
+    font-size:3.2em;
+    padding:0.2em 0.2em;
+    position:center;
+    border-radius:0.12em;
+  }
+
+  
+   a
+  {
+   color:yellow;
+   font-size:2.5em;
+   margin-left:1.5em;
+  }
+}
+</style>
+</head>
+<body>
+<h1 class="InversionzItalic">PROJECT-1</h1>
+<p class="KlarindaPlayfulPersonal">HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core languages used for building web pages.
+HTML provides the structure of the webpage whereas CSS helps in styling and layout of your webpage.
+This project represents a "CALCULATOR", made with the help of simple coding. Here, you can perform all the operations(+, -, x, /, %).
+Type your expression and click on "=" to check the results. Also, click on 'C' to clear the textbar.</p>
+<center>
+<img src="calculator.jpg" alt="calculator">
+</center>
+<h2 class="Klara">+X &nbsp; &nbsp; CALCULATOR &nbsp; &nbsp;  X+</h2>>
+<form name="cal">
+  <input type="text" name="display" disabled style="width:8em; height:1.5em; background:grey; color:white;" class="digital">
+  <br>
+  <input type="button" value="7" onclick="cal.display.value+='7'" class="btn">
+  <input type="button" value="8" onclick="cal.display.value+='8'" class="btn">
+  <input type="button" value="9" onclick="cal.display.value+='9'" class="btn">
+  <input type="button" value="+" onclick="cal.display.value+='+'" style="background:purple;" class="ltn">
+  <br>
+  <input type="button" value="4" onclick="cal.display.value+='4'" class="btn">
+  <input type="button" value="5" onclick="cal.display.value+='5'" class="btn">
+  <input type="button" value="6" onclick="cal.display.value+='6'" class="btn">
+  <input type="button" value="-" onclick="cal.display.value+='-'" style="background:purple;" class="ltn">
+  <br>
+  <input type="button" value="1" onclick="cal.display.value+='1'" class="btn">
+  <input type="button" value="2" onclick="cal.display.value+='2'" class="btn">
+  <input type="button" value="3" onclick="cal.display.value+='3'" class="btn">
+  <input type="button" value="X" onclick="cal.display.value+='*'" style="background:purple;" class="ltn">
+  <br>
+  <input type="button" value="C" onclick="cal.display.value=''" id="del" style="background:black; color:white;" class="ltn">
+  <input type="button" value="0" onclick="cal.display.value+='0'" class="btn">
+  <input type="button" value="." onclick="cal.display.value+='.'" class="btn">
+  <input type="button" value="%" onclick="cal.display.value+='%'" style="background:purple;" class="ltn">
+  <br>
+  <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)" style="width:4.8em; background:black; color:white;" class="ltn">
+  <input type="button" value="/" onclick="cal.display.value+='/'" style="background:purple;" class="ltn">
+</form>
+<br>
+<a href="index.html" download>Click here to see the code.</a>
+</body>
+</html>
